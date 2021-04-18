@@ -1,0 +1,6 @@
+server:
+  prot: 8080
+knife4j:
+  enable: true
+    # 开启生产环境屏蔽 无法访问接口 /doc.html
+  production: true

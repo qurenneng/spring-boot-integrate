@@ -1,0 +1,5 @@
+server:
+  prot: 8080
+
+knife4j:
+  enable: true

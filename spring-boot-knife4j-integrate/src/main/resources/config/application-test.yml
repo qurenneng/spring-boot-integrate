@@ -1,0 +1,11 @@
+server:
+  prot: 8080
+knife4j:
+  enable: true
+  # 测试环境 开启Swagger的Basic认证功能,默认是false
+  basic:
+    enable: true
+    # Basic认证用户名
+    username: admin
+    # Basic认证密码
+    password: admin

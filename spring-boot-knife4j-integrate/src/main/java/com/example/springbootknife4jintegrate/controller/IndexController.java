@@ -1,5 +1,6 @@
 package com.example.springbootknife4jintegrate.controller;
 
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -19,7 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
 
     @ApiImplicitParam(name = "name",value = "姓名",required = true)
-    @ApiOperation(value = "向客人问好")
+    @ApiOperation(value = "例子")
+    @ApiOperationSupport(author = "1796789910@qq.com")
     @GetMapping("/sayHi")
     public ResponseEntity<String> sayHi(@RequestParam(value = "name")String name){
         return ResponseEntity.ok("Hi:"+name);
