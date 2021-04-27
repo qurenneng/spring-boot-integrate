@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost/user?serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 8080
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/**/*Mapper.xml,   #映射文件路径
+  type-aliases-package: com.example.springbootmybatisplusintegrat.mappe #模型所在的包命
