@@ -14,5 +14,6 @@
         <module>spring-boot-mybatisplus-integrat</module>
         <module>spring-boot-cache-integrat</module>
         <module>spring-boot-redis-integrat</module>
+        <module>spring-boot-elasticsearch-integrat</module>
     </modules>
 </project>

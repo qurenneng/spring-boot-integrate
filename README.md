@@ -6,3 +6,5 @@
 
 [SpringBoot整合Redis 分布式缓存](https://blog.csdn.net/qq_41971087/article/details/116333343)
 
+[SpringBoot整合Elasticsearch 分布式搜索](https://blog.csdn.net/qq_41971087/article/details/116334454)
+
