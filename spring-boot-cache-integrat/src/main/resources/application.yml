@@ -10,4 +10,9 @@ server:
 
 mybatis:
   mapper-locations: classpath:mapper/**/*Mapper.xml,
-  type-aliases-package: com.example.springbootmybatisplusintegrat.mapper
+  type-aliases-package: com.example.springbootcacheintegrat.mapper
+
+logging:
+  level:
+    com.example.springbootcacheintegrat.mapper: debug
+
