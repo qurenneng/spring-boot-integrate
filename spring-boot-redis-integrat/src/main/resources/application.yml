@@ -14,6 +14,7 @@ mybatis:
   mapper-locations: classpath:mapper/**/*Mapper.xml,
   type-aliases-package: com.example.springbootredisintegrat.mapper
 
+## 开启mysql 日志打印
 logging:
   level:
     com.example.springbootredisintegrat.mapper: debug
