@@ -13,5 +13,6 @@
         <module>spring-boot-oauth2-integrate</module>
         <module>spring-boot-mybatisplus-integrat</module>
         <module>spring-boot-cache-integrat</module>
+        <module>spring-boot-redis-integrat</module>
     </modules>
 </project>

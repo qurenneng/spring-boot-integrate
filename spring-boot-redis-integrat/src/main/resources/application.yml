@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost/user?serverTimezone=UTC&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    username: root
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*Mapper.xml,
+  type-aliases-package: com.example.springbootredisintegrat.mapper
+
+logging:
+  level:
+    com.example.springbootredisintegrat.mapper: debug
+
