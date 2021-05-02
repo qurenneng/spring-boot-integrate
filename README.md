@@ -12,3 +12,5 @@
 
 [SpringBoot 整合mail发送邮件服务](https://blog.csdn.net/qq_41971087/article/details/116352374)
 
+[SpringBoot整合Security 登录授权](https://blog.csdn.net/qq_41971087/article/details/116353061)
+
