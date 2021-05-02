@@ -8,3 +8,7 @@
 
 [SpringBoot整合Elasticsearch 分布式搜索](https://blog.csdn.net/qq_41971087/article/details/116334454)
 
+[SpringBoot 整合 定时计划与异步](https://blog.csdn.net/qq_41971087/article/details/116351142)
+
+[SpringBoot 整合mail发送邮件服务](https://blog.csdn.net/qq_41971087/article/details/116352374)
+
