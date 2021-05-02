@@ -1,0 +1,5 @@
+spring:
+  mail:
+    username: miraitowa1796@163.com
+    password: OAJFKDISCBDVRGJE
+    host: smtp.163.com

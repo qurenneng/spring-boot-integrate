@@ -15,5 +15,7 @@
         <module>spring-boot-cache-integrat</module>
         <module>spring-boot-redis-integrat</module>
         <module>spring-boot-elasticsearch-integrat</module>
+        <module>spring-boot-task-integrat</module>
+        <module>spring-boot-mail-integrat</module>
     </modules>
 </project>
