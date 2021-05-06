@@ -1,5 +1,7 @@
 package com.example.springbootmybatisplusintegrat.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.springbootmybatisplusintegrat.bean.User;
 import com.example.springbootmybatisplusintegrat.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +30,22 @@ public class UseController {
     @GetMapping("list")
     public List<User> list(){
         return iUserService.list();
+    }
+
+
+    /**
+     * 分页列表查询:
+     * @param page
+     * @param rows
+     * @return
+     */
+    @GetMapping("getPageUser")
+    public IPage<User> getPageUser(Integer page,Integer rows){
+        Page<User> userPage = new Page<User>();
+        userPage.setCurrent(page);
+        userPage.setSize(rows);
+        IPage<User> userIPage = iUserService.selectUserPage(userPage);
+        return userIPage;
     }
 
 

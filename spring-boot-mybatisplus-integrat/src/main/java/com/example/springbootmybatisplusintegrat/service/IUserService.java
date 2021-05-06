@@ -1,5 +1,7 @@
 package com.example.springbootmybatisplusintegrat.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.springbootmybatisplusintegrat.bean.User;
 
@@ -10,4 +12,6 @@ import com.example.springbootmybatisplusintegrat.bean.User;
  * @time 16:38
  */
 public interface IUserService extends IService<User> {
+
+    public IPage<User> selectUserPage(Page<User> page);
 }

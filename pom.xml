@@ -17,5 +17,6 @@
         <module>spring-boot-elasticsearch-integrat</module>
         <module>spring-boot-task-integrat</module>
         <module>spring-boot-mail-integrat</module>
+        <module>spring-boot-security-integrat</module>
     </modules>
 </project>
