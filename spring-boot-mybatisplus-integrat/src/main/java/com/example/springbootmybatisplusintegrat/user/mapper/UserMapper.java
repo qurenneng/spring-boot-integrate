@@ -1,9 +1,9 @@
-package com.example.springbootmybatisplusintegrat.mapper;
+package com.example.springbootmybatisplusintegrat.user.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.springbootmybatisplusintegrat.bean.User;
+import com.example.springbootmybatisplusintegrat.user.bean.User;
 
 /**
  * @Author qrn

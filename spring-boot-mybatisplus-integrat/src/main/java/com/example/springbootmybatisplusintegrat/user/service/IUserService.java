@@ -1,9 +1,9 @@
-package com.example.springbootmybatisplusintegrat.service;
+package com.example.springbootmybatisplusintegrat.user.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.example.springbootmybatisplusintegrat.bean.User;
+import com.example.springbootmybatisplusintegrat.user.bean.User;
 
 /**
  * @Author qrn

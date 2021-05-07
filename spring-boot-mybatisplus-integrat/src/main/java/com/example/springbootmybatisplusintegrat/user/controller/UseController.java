@@ -1,13 +1,11 @@
-package com.example.springbootmybatisplusintegrat.controller;
+package com.example.springbootmybatisplusintegrat.user.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.springbootmybatisplusintegrat.bean.User;
-import com.example.springbootmybatisplusintegrat.service.IUserService;
+import com.example.springbootmybatisplusintegrat.user.bean.User;
+import com.example.springbootmybatisplusintegrat.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.annotation.Resource;
 import java.util.List;
 
 /**

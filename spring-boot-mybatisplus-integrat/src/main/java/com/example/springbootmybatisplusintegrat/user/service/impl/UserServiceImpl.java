@@ -1,12 +1,11 @@
-package com.example.springbootmybatisplusintegrat.service.impl;
+package com.example.springbootmybatisplusintegrat.user.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.example.springbootmybatisplusintegrat.bean.User;
-import com.example.springbootmybatisplusintegrat.mapper.UserMapper;
-import com.example.springbootmybatisplusintegrat.service.IUserService;
+import com.example.springbootmybatisplusintegrat.user.bean.User;
+import com.example.springbootmybatisplusintegrat.user.mapper.UserMapper;
+import com.example.springbootmybatisplusintegrat.user.service.IUserService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @time 16:38
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements IUserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
     @Override
     public IPage<User> selectUserPage(Page<User> page) {
