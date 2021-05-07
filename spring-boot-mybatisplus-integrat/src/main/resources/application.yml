@@ -4,10 +4,11 @@ spring:
     password: root
     url: jdbc:mysql://localhost/user?serverTimezone=UTC&useSSL=false&allowMultiQueries=true
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+## 服务端口
 server:
   port: 8080
 
+##扫描的xml 路径和 实体类
 mybatis:
   mapper-locations: classpath:mapper/**/*Mapper.xml,
   type-aliases-package: com.example.springbootmybatisplusintegrat.*.bean
