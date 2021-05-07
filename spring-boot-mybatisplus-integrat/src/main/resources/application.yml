@@ -3,7 +3,7 @@ spring:
     username: root
     password: root
     url: jdbc:mysql://localhost/user?serverTimezone=UTC&useSSL=false&allowMultiQueries=true
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
   port: 8080
@@ -16,4 +16,4 @@ mybatis:
 ## 打印sql日志:
 logging:
   level:
-    com.example.springbootmybatisplusintegrat.*.mapper: debug
+    com.example.springbootmybatisplusintegrat: debug
