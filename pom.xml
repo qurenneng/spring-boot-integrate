@@ -18,5 +18,6 @@
         <module>spring-boot-task-integrat</module>
         <module>spring-boot-mail-integrat</module>
         <module>spring-boot-security-integrat</module>
+        <module>spring-boot-jpa-integrat</module>
     </modules>
 </project>
