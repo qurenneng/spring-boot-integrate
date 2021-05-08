@@ -15,3 +15,5 @@
 [SpringBoot整合Security 登录授权](https://blog.csdn.net/qq_41971087/article/details/116353061)
 
 [SpringBoot 整合 Mybatis-Plus实现简单的CRUD](https://blog.csdn.net/qq_41971087/article/details/116502136)
+
+[SpringBoot 整合 JPA 实现CRUD](https://blog.csdn.net/qq_41971087/article/details/116529286)
