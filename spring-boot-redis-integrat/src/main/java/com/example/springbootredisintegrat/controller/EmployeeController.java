@@ -3,6 +3,7 @@ package com.example.springbootredisintegrat.controller;
 
 import com.example.springbootredisintegrat.bean.Employee;
 import com.example.springbootredisintegrat.service.EmployeeService;
+import com.example.springbootredisintegrat.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,9 @@ public class EmployeeController {
 
     @Autowired
     EmployeeService employeeService;
+
+    @Autowired
+    RedisService redisService;
 
     /**
      * 查询信息：
@@ -48,4 +52,10 @@ public class EmployeeController {
     public Employee deleteEmployee(Integer id){
         return  employeeService.deleteEmployee(id);
     }
+
+
+//    @RequestMapping("/deleteEmployee")
+//    public void  setVluae(){
+//        return  redisService.set();
+//    }
 }
