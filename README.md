@@ -17,3 +17,5 @@
 [SpringBoot 整合 Mybatis-Plus实现简单的CRUD](https://blog.csdn.net/qq_41971087/article/details/116502136)
 
 [SpringBoot 整合 JPA 实现CRUD](https://blog.csdn.net/qq_41971087/article/details/116529286)
+
+[SpringBoot整合新冠API](https://blog.csdn.net/qq_41971087/article/details/117259347)
