@@ -20,6 +20,7 @@
         <module>spring-boot-security-integrat</module>
         <module>spring-boot-jpa-integrat</module>
         <module>spring-boot-api-integrat</module>
+        <module>spring-boot-mongodb-integrat</module>
     </modules>
 
 </project>
