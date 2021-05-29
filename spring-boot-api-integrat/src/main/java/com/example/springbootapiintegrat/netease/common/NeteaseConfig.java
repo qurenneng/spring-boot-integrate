@@ -12,11 +12,16 @@ public class NeteaseConfig {
     /**
      * 网易云音乐:
      */
-    private final  static String MUSICURL = "https://api.66mz8.com/api/rand.music.163.php?format=json";
+    public final static String MUSICURL = "https://api.66mz8.com/api/rand.music.163.php?format=json";
 
     /**
      * 网易云热评:
      */
-    private final  static String HOTMUSICURL = "https://api.66mz8.com/api/music.163.php?format=json";
+    public final static String HOTMUSICURL = "https://api.66mz8.com/api/music.163.php?format=json";
+
+    /**
+     * 网易云音乐 搜索关键字查询:
+     */
+    public final  static String MUSICURLSEARCH = "https://v1.alapi.cn/api/music/search";
 
 }
