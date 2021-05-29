@@ -3,6 +3,12 @@
 <mapper namespace="com.example.springbootmybatisplusintegrat.user.mapper.UserMapper">
 
 
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.example.springbootmybatisplusintegrat.user.bean.User">
+        insert  into user(name,age,email)
+         values(#{name},#{age},#{email})
+    </insert>
+
+
     <select id="selectPageVo" resultType="com.example.springbootmybatisplusintegrat.user.bean.User">
         SELECT * FROM user
     </select>

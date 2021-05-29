@@ -21,4 +21,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     public IPage<User> selectUserPage(Page<User> page) {
         return baseMapper.selectPageVo(page);
     }
+
+    @Override
+    public int insertUser(User user) {
+        return baseMapper.insertUser(user);
+    }
 }

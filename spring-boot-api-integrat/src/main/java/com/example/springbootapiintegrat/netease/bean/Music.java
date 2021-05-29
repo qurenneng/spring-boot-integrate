@@ -1,5 +1,7 @@
 package com.example.springbootapiintegrat.netease.bean;
 
+import java.util.Date;
+
 /**
  * @Author qrn
  * @Title
@@ -9,17 +11,21 @@ package com.example.springbootapiintegrat.netease.bean;
  */
 public class Music {
 
+    private Integer id;
     /**
      * 作者名称:
      */
-    private String artists_name;
+    private String artistsName;
     /**
      * 歌曲链接:
      */
-    private String music_url;
+    private String musicUrl;
     /**
      * 歌曲封面图片
      */
-    private String music_pic;
-
+    private String musicPic;
+    /**
+     * 创建时间:
+     */
+    private Date createTime;
 }

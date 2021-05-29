@@ -23,4 +23,6 @@ public interface UserMapper extends BaseMapper<User> {
      */
     IPage<User> selectPageVo(Page<?> page);
 
+    int insertUser(User user);
+
 }

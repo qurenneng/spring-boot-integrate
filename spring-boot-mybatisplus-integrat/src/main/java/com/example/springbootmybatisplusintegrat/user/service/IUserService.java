@@ -14,4 +14,7 @@ import com.example.springbootmybatisplusintegrat.user.bean.User;
 public interface IUserService extends IService<User> {
 
      IPage<User> selectUserPage(Page<User> page);
+
+
+     int insertUser(User user);
 }
