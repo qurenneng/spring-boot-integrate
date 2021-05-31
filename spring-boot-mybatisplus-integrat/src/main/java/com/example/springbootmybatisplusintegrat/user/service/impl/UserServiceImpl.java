@@ -23,6 +23,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
     }
 
     @Override
+    public User getUser(Integer id) {
+        return baseMapper.getUser(id);
+    }
+
+    @Override
     public int insertUser(User user) {
         return baseMapper.insertUser(user);
     }

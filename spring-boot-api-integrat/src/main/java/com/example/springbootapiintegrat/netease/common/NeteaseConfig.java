@@ -24,4 +24,21 @@ public class NeteaseConfig {
      */
     public final  static String MUSICURLSEARCH = "https://v1.alapi.cn/api/music/search";
 
+    /**
+     * 网易云榜单音乐:
+     */
+    public final  static String RANDMUSIC = "https://api.uomg.com/api/rand.music";
+
+    /**
+     * 网易头条新闻:
+     */
+    public final  static String NEWTOUTIAO = "https://v1.alapi.cn/api/new/toutiao";
+
+    /**
+     * 网易头条新闻详情:
+     */
+    public final  static String NEWDETAI = "https://v1.alapi.cn/api/new/detail";
+
+
+
 }

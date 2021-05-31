@@ -15,6 +15,9 @@ public interface IUserService extends IService<User> {
 
      IPage<User> selectUserPage(Page<User> page);
 
+     User getUser(Integer id);
+
+
 
      int insertUser(User user);
 }

@@ -25,4 +25,6 @@ public interface UserMapper extends BaseMapper<User> {
 
     int insertUser(User user);
 
+    User getUser(Integer id);
+
 }

@@ -12,4 +12,9 @@
     <select id="selectPageVo" resultType="com.example.springbootmybatisplusintegrat.user.bean.User">
         SELECT * FROM user
     </select>
+
+    <select id="getUser" resultType="com.example.springbootmybatisplusintegrat.user.bean.User">
+         SELECT * FROM user where id = #{id}
+    </select>
+
 </mapper>
