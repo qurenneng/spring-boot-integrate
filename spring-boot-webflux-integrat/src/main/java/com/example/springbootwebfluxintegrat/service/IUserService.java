@@ -17,7 +17,5 @@ public interface IUserService extends IService<User> {
 
      User getUser(Integer id);
 
-
-
      int insertUser(User user);
 }
