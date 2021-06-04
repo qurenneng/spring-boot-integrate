@@ -6,3 +6,8 @@ management:
     web:
       exposure:
         include: "*"
+spring:
+  security:
+    user:
+      name: root
+      password: root
