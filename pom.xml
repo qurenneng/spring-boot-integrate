@@ -22,6 +22,7 @@
         <module>spring-boot-api-integrat</module>
         <module>spring-boot-mongodb-integrat</module>
         <module>spring-boot-webflux-integrat</module>
+        <module>spring-boot-actuator-integrat</module>
     </modules>
 
 </project>
