@@ -54,8 +54,4 @@ public class EmployeeController {
     }
 
 
-//    @RequestMapping("/deleteEmployee")
-//    public void  setVluae(){
-//        return  redisService.set();
-//    }
 }

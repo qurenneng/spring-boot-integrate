@@ -1,5 +1,6 @@
 package com.example.springbootredisintegrat.service;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -18,4 +19,20 @@ public interface RedisService {
     Long size(String key);
 
     String get(Object var1);
+
+    /**
+     * list 数据结构:
+     * @param key
+     * @param value
+     * @return
+     */
+    Long lpush(String key,String... value);
+
+    Long lpush(String key,String value);
+
+    Long lpush(String key,int lockTimeout,TimeUnit timeUnit,String... value);
+
+    Long lpush(String key, int lockTimeout, TimeUnit timeUnit, List<String> value);
+
+    String lpop(String key);
 }

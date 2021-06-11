@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -37,6 +38,37 @@ public class RedisServiceImpl implements RedisService {
     @Override
     public String get(Object var1) {
         return stringRedisTemplate.opsForValue().get(var1);
+    }
+
+    @Override
+    public Long lpush(String key, String... value) {
+        Long aLong = stringRedisTemplate.opsForList().leftPushAll(key, value);
+        return aLong;
+    }
+
+    @Override
+    public Long lpush(String key, String value) {
+        Long aLong = stringRedisTemplate.opsForList().leftPush(key,value);
+        return aLong;
+    }
+
+    @Override
+    public Long lpush(String key, int lockTimeout,TimeUnit timeUnit, String... value) {
+        Long aLong = stringRedisTemplate.opsForList().leftPushAll(key, value);
+        stringRedisTemplate.expire(key,lockTimeout,timeUnit);
+        return null;
+    }
+
+    @Override
+    public Long lpush(String key, int lockTimeout, TimeUnit timeUnit, List<String> value) {
+        Long aLong = stringRedisTemplate.opsForList().leftPushAll(key, value);
+        stringRedisTemplate.expire(key,lockTimeout,timeUnit);
+        return null;
+    }
+
+    @Override
+    public String lpop(String key) {
+        return stringRedisTemplate.opsForList().leftPop(key);
     }
 
 }
