@@ -24,6 +24,7 @@
         <module>spring-boot-webflux-integrat</module>
         <module>spring-boot-actuator-integrat</module>
         <module>spring-boot-cloudstorage-integrat</module>
+        <module>spring-boot-graalvm-native-integrat</module>
     </modules>
 
 </project>
