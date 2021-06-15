@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>图片管理</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style type="text/css">
+        .image_class{
+            width: 50px;
+            margin: 10px;
+        }
+        .img_big{
+            z-index: 10;
+            visibility:hidden;
+            width: 600px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#file_image").change(function(){
+                alert("进来了吗!!!!");
+                path_full=$("#file_image").val();
+                srts=path_full.split("\\");
+                fileName="";
+                for(var i=0;i<srts.length;i++){
+                    fileName=srts[i];
+                }
+                getUptoken(fileName);
+            });
+
+
+            //上传图片
+            $("#upload_form").submit(function(event){
+                //阻止默认的提交方式
+                event.preventDefault();
+                console.log(this);
+                // mulitipart form,如文件上传类
+                var formData = new FormData(this);
+                console.log(formData.values() );
+                $.ajax({
+                    type: $("#upload_form").attr('method'),
+                    url: $("#upload_form").attr('action'),
+                    data: formData,
+                    mimeType: "multipart/form-data",
+                    contentType: false,
+                    cache: false,
+                    processData: false
+                }).success(function (result) {
+                    alert(result);
+                    alert("上传成功！");
+                    //成功提交
+                }).fail(function (jqXHR, textStatus, errorThrown) {
+                    //错误信息
+                });
+            });
+        });
+
+        //获取token值
+        function getUptoken(fileName){
+            $.ajax({
+                url: 'http://localhost:8080/upToken',
+                type: 'GET',
+                data: {fileName: fileName},
+                success: function(result) {
+                    console.log(result);
+                    $("#key").val(null);
+                    $("#token").val(result);
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+<div>
+</div>
+<div id="image_upload">
+    <h2>图片上传</h2>
+    <form id="upload_form" method="POST" action="http://upload.qiniu.com/" enctype="multipart/form-data">
+        <!--       <input id="key" name="key" type="hidden" value="" /> -->
+<!--        <input name="x:<custom_name>" type="hidden" value="" />-->
+        <input id="token" name="token" type="hidden" value="" />
+        <!--      <input name="crc32" type="hidden" />-->
+        <input name="accept" type="hidden"/>
+        <input id="file_image" name="file" type="file" accept="image/png,image/jpeg"/>
+        <input type="submit" id="upload" value="上传" />
+    </form>
+</div>
+
+</body>
+</html>

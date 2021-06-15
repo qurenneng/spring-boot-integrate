@@ -1,0 +1,20 @@
+cosProperties:
+  bucketName: mybuckexxxxxxxx264576
+  accessKey: AKIDmNxxxxxxxx6q8lvA
+  secretKey: 7xYsxxxxxxxxtzo
+  region: ap-guangzhou
+
+ossProperties:
+  bucketName: myxxxxxxxx001
+  accessKey: LTAI4xxxxxxxxEL1
+  secretKey: 46M3xxxxxxxx4yU
+  region: oss-cn-beijing.aliyuncs.com
+  dir: xxxxxxxx/
+
+qiniuyunProperties:
+  bucketName: mybuxxxxxxxx2
+  accessKey: mypxxxxxxxx-Al
+  secretKey: 5OLjSxxxxxxxxPFC
+
+server:
+  port: 8080
