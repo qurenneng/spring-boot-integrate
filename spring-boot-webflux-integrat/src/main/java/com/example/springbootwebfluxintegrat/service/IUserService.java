@@ -17,5 +17,6 @@ public interface IUserService extends IService<User> {
 
      User getUser(Integer id);
 
+     @SuppressWarnings("AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc")
      int insertUser(User user);
 }
