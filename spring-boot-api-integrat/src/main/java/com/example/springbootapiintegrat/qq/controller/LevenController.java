@@ -13,11 +13,32 @@ import org.springframework.web.bind.annotation.RestController;
  * 网易云控制层:
  */
 @RestController
-@RequestMapping("/netease/")
+@RequestMapping("/leven/")
 public class LevenController {
 
 
     @Autowired
     ILevenService iMusicService;
+
+    /**
+     * 根据qq号查询 qq等级:
+     * @param qq
+     * @return
+     */
+    @RequestMapping("queryQQ")
+    public String queryQQ(String qq){
+        return  iMusicService.queryQQ(qq);
+    }
+
+
+    /**
+     * 直连qq群:
+     * @param qq
+     * @return
+     */
+    @RequestMapping("queryQun")
+    public String queryQun(String qq){
+        return  iMusicService.queryQun(qq);
+    }
 
 }

@@ -1,6 +1,8 @@
 package com.example.springbootapiintegrat;
 
 import java.math.BigDecimal;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * @Author qrn
@@ -36,19 +38,6 @@ public class Test {
         return money;
     }
 
-    public static void main(String[] args) {
-//        for (int i = 0; i < 50; i++) {
-            RedPackage moneyPackage = new RedPackage();
-            moneyPackage.remainMoney = BigDecimal.valueOf(100);
-            moneyPackage.remainSize = 5;
-
-            while (moneyPackage.remainSize != 0) {
-                System.out.print(getRandomMoney(moneyPackage)  + "   ");
-            }
-
-            System.out.println();
-        }
-//    }
 
     static class RedPackage {
         int    remainSize;

@@ -12,5 +12,8 @@ import com.example.springbootapiintegrat.qq.bean.Leven;
 public interface ILevenService extends IService<Leven> {
 
 
+    String queryQQ(String qq);
+
+    String queryQun(String qq);
 
 }
