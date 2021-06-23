@@ -1,8 +1,7 @@
 package com.example.springbootapiintegrat;
 
 import java.math.BigDecimal;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Date;
 
 /**
  * @Author qrn
@@ -42,5 +41,10 @@ public class Test {
     static class RedPackage {
         int    remainSize;
         BigDecimal remainMoney;
+    }
+
+
+    public static void main(String[] args) {
+        long time = new Date().getTime();
     }
 }
