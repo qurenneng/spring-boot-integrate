@@ -71,4 +71,15 @@ public class RedisServiceImpl implements RedisService {
         return stringRedisTemplate.opsForList().leftPop(key);
     }
 
+    /**
+     * 获取key的长度:
+     * @param key
+     * @return
+     */
+    @Override
+    public Long llen(String key) {
+        Long size = stringRedisTemplate.opsForList().size(key);
+        return  size;
+    }
+
 }

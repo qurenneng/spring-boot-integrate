@@ -137,4 +137,16 @@ public class RedisController {
     }
 
 
+    /**
+     * list 测试:
+     * @param key 红包key
+     */
+    @RequestMapping("/llen")
+    public Long llen(String key){
+        Long llen = redisService.llen(key);
+        System.out.println(llen);
+        return  llen;
+    }
+
+
 }

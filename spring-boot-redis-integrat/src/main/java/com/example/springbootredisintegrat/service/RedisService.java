@@ -35,4 +35,12 @@ public interface RedisService {
     Long lpush(String key, int lockTimeout, TimeUnit timeUnit, List<String> value);
 
     String lpop(String key);
+
+    /**
+     * 获取list key的长度:
+     * @param key
+     * @return
+     */
+    Long llen(String key);
+
 }
