@@ -27,6 +27,7 @@
         <module>spring-boot-graalvm-native-integrat</module>
         <module>spring-boot-rsocket-integrat</module>
         <module>spring-boot-druid-integrat</module>
+        <module>spring-boot-redisson-integrat</module>
     </modules>
 
 </project>
