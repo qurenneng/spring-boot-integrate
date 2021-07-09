@@ -28,6 +28,7 @@
         <module>spring-boot-rsocket-integrat</module>
         <module>spring-boot-druid-integrat</module>
         <module>spring-boot-redisson-integrat</module>
+        <module>spring-boot-minio-integrat</module>
     </modules>
 
 </project>
