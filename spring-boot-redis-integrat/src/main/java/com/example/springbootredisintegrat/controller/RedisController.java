@@ -1,5 +1,6 @@
 package com.example.springbootredisintegrat.controller;
 
+import com.example.springbootredisintegrat.bean.Department;
 import com.example.springbootredisintegrat.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
@@ -8,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -146,6 +145,32 @@ public class RedisController {
         Long llen = redisService.llen(key);
         System.out.println(llen);
         return  llen;
+    }
+
+    public static void main(String[] args) {
+
+        ArrayList<Department> departments = new ArrayList<>();
+        Department department = new Department();
+        department.setId(1);
+
+        Department department2 = new Department();
+        department2.setId(2);
+
+        Department department3 = new Department();
+        department3.setId(3);
+
+        departments.add(department3);
+        departments.add(department2);
+        departments.add(department);
+
+        List<Department> collect = departments.stream().sorted(Comparator.comparing(Department::getId).reversed()).limit(3).collect(Collectors.toList());
+
+        collect.stream().forEach(i->{
+            System.out.println(i.getId());
+        });
+        Collections.shuffle(collect);
+
+       System.out.println(collect.get(0));
     }
 
 

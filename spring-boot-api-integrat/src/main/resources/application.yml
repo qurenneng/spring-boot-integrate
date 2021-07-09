@@ -17,3 +17,6 @@ mybatis:
 logging:
   level:
     com.example.springbootapiintegrat: debug
+
+sande:
+  mid: 1111
