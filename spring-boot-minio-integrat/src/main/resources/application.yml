@@ -2,4 +2,4 @@ minio:
   endpoint: http://139.196.140.243:9000/
   accessKey: minioadmin
   secretKey: minioadmin
-  bucket: blogs
+  bucket: backet

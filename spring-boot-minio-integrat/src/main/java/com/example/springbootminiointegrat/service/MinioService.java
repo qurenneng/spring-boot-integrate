@@ -1,9 +1,12 @@
 package com.example.springbootminiointegrat.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.example.springbootminiointegrat.config.MinioConfig;
 import io.minio.MinioClient;
 import io.minio.PutObjectOptions;
+import io.minio.Result;
 import io.minio.errors.*;
+import io.minio.messages.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +16,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * @Author qrn
@@ -38,7 +45,7 @@ public class MinioService {
             if(!bucketExists){
                 minioClient.makeBucket(minioConfig.getBucket());
             }
-            File file = new File("spring-boot-minio-integrat/touxian.jpeg");
+            File file = new File("spring-boot-minio-integrat/1122.png");
             FileInputStream fileInputStream = new FileInputStream(file);
             minioClient.putObject(minioConfig.getBucket(),file.getName(), fileInputStream,new PutObjectOptions(fileInputStream.available(),-1));
             System.out.println("上次文件成功!");
