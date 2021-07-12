@@ -30,3 +30,4 @@
 
 [SpringBoot 整合 Druid 数据库连接池](https://blog.csdn.net/qq_41971087/article/details/118187588)
 
+[SpringBoot整合 MinIO 分布式对象存储](https://blog.csdn.net/qq_41971087/article/details/118680978)
