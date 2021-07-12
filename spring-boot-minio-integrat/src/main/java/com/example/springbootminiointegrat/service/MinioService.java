@@ -65,6 +65,12 @@ public class MinioService {
         return  "";
     }
 
+    /**
+     * 初始化
+     * @return
+     * @throws InvalidPortException
+     * @throws InvalidEndpointException
+     */
     public MinioClient init() throws InvalidPortException, InvalidEndpointException {
         MinioClient  minioClient = new MinioClient(minioConfig.getEndpoint(),minioConfig.getAccessKey(),minioConfig.getSecretKey());
         return  minioClient;
