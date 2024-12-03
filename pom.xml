@@ -9,26 +9,26 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-knife4j-integrate</module>
-        <module>spring-boot-oauth2-integrate</module>
-        <module>spring-boot-mybatisplus-integrat</module>
-        <module>spring-boot-cache-integrat</module>
-        <module>spring-boot-redis-integrat</module>
-        <module>spring-boot-elasticsearch-integrat</module>
+<!--        <module>spring-boot-knife4j-integrate</module>-->
+<!--        <module>spring-boot-oauth2-integrate</module>-->
+<!--        <module>spring-boot-mybatisplus-integrat</module>-->
+<!--        <module>spring-boot-cache-integrat</module>-->
+<!--        <module>spring-boot-redis-integrat</module>-->
+<!--        <module>spring-boot-elasticsearch-integrat</module>-->
         <module>spring-boot-task-integrat</module>
-        <module>spring-boot-mail-integrat</module>
-        <module>spring-boot-security-integrat</module>
-        <module>spring-boot-jpa-integrat</module>
-        <module>spring-boot-api-integrat</module>
-        <module>spring-boot-mongodb-integrat</module>
-        <module>spring-boot-webflux-integrat</module>
-        <module>spring-boot-actuator-integrat</module>
-        <module>spring-boot-cloudstorage-integrat</module>
-        <module>spring-boot-graalvm-native-integrat</module>
-        <module>spring-boot-rsocket-integrat</module>
-        <module>spring-boot-druid-integrat</module>
-        <module>spring-boot-redisson-integrat</module>
-        <module>spring-boot-minio-integrat</module>
+<!--        <module>spring-boot-mail-integrat</module>-->
+<!--        <module>spring-boot-security-integrat</module>-->
+<!--        <module>spring-boot-jpa-integrat</module>-->
+<!--        <module>spring-boot-api-integrat</module>-->
+<!--        <module>spring-boot-mongodb-integrat</module>-->
+<!--        <module>spring-boot-webflux-integrat</module>-->
+<!--        <module>spring-boot-actuator-integrat</module>-->
+<!--        <module>spring-boot-cloudstorage-integrat</module>-->
+<!--        <module>spring-boot-graalvm-native-integrat</module>-->
+<!--        <module>spring-boot-rsocket-integrat</module>-->
+<!--        <module>spring-boot-druid-integrat</module>-->
+<!--        <module>spring-boot-redisson-integrat</module>-->
+<!--        <module>spring-boot-minio-integrat</module>-->
     </modules>
 
 </project>
